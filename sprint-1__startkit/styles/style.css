@@ -336,8 +336,39 @@
   justify-content: space-around;
 }
 
+.column-heading {
+  margin-bottom: 20px;
+}
+
 .column-links {
   list-style: none;
   text-align: left;
   padding: 0;
+}
+
+.column-link {
+  margin-bottom: 15px;
+}
+
+.column-link a {
+  text-decoration: none;
+  list-style: none;
+  color: #f2f2f2;
+}
+
+.column-link-logo {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-logo-social {
+  color: #f2f2f2;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 15px;
 }
