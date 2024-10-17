@@ -30,65 +30,84 @@
   margin-top: 80px;
 }
 
-/* -------------------------------- */
+/* Мои стили */
+
+
+
+/* ----------HEADER---------- */
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  margin-bottom: 100px;
 }
-
 
 .logo {
   width: 228px;
   height: 32px;
+}
+
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
+  z-index: 2;
 }
 
-
-.title {
+.header__title {
   width: 730px;
-  position: absolute;
-  left: 64px;
-  font-size: 36px;
-  text-align: center;
-  line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  text-align: left;
+  line-height: 96px;
+  z-index: 2;
 }
 
-.subtitle {
+.header__subtitle {
   width: 388px;
-  position: absolute;
-  left: 64px;
-  bottom: 30px;
-  line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  line-height: 25px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 2;
 }
 
-.main-illustration {
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__main-illustration {
   width: 765px;
   height: 608px;
+  background-image: url('../images/two_again.png');
+  background-size: cover;
   position: absolute;
-  right: 0;
   bottom: 0;
+  right: 0;
   z-index: 1;
 }
 
-.square-pic {
-  width: 568px;
+.header__square-pic {
   height: 568px;
-  position: absolute;
-  right: 0;
-  top: 64px;
+  width: 568px;
   background-color: #2f80ed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 64px;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 64px;
 }
 
 .description {
@@ -303,72 +322,66 @@
   margin-right: -210px;
 }
 
+
+
+/* ----------FOOTER---------- */
+
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
-}
-
-.columns {
-  margin: 0 auto;
-  width: 90%;
   padding-top: 60px;
-  padding-bottom: 40px;
-  display: flex;
-  color: #f2f2f2;
+  margin: 0 auto;
 }
 
-.content-copyright {
+.footer__columns {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 711px;
 }
 
-.author {
-  padding-top: 17.5%;
+.footer__author {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  color: white;
+  padding-top: 18px;
 }
 
-.footer-logo {
-  width: 228px;
-  height: 32px;
-}
-
-.footer-text {
-  flex-basis: 711px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.column-heading {
+.footer__column-heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  color: white;
   margin-bottom: 20px;
 }
 
-.column-links {
-  list-style: none;
-  text-align: left;
+.footer__column-links {
+  list-style-type: none;
   padding: 0;
 }
 
-.column-link {
-  margin-bottom: 15px;
-}
-
-.column-link a {
+.footer__column-link {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: white;
   text-decoration: none;
-  list-style: none;
-  color: #f2f2f2;
+  margin-bottom: 16px;
 }
 
-.column-link-logo {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-icon {
+.social-icon {
   width: 16px;
   height: 16px;
-}
-
-.footer-logo-social {
-  color: #f2f2f2;
-  text-decoration: none;
-  margin-left: 10px;
-  margin-bottom: 15px;
+  margin-right: 10px;
 }

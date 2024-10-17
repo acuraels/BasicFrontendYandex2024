@@ -14,14 +14,18 @@
 <body>
   <div class="page">
     <header class="header">
-      <a href="#">
-        <img src="images/logo_place_header.svg" alt="Logo" class="logo">
-      </a>
-      <h1 class="title">Научиться учиться</h1>
-      <p class="subtitle">Какие современные и эффективные подходы к обучению вы можете использовать
-        в своей жизни? <a href="#" class="link">Узнать -></a></p>
-      <img src="images/two_again.png" alt="Картина <<Опять двойка>>" class="main-illustration">
-      <div class="square-pic"></div>
+      <div class="flex_column">
+        <div class="logo logo_place_header">
+          <img src="images/logo_place_header.svg" alt="Логотип">
+        </div>
+        <h1 class="header__title">Научиться учиться</h1>
+        <h2 class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей
+          жизни? <a class="header__link" href="#0">Узнать &rarr;</a></h2>
+      </div>
+      <div class="header__image">
+        <div class="header__main-illustration"></div>
+        <div class="header__square-pic"></div>
+      </div>
     </header>
 
     <main class="content">
@@ -146,47 +150,44 @@
     </main>
 
     <footer class="footer">
-      <div class="columns">
-        <div class="content-copyright">
-          <a href="#">
-            <img src="images/logo_place_footer.svg" alt="Logo" class="footer-logo">
-          </a>
-          <p class="author"> &copy; Устинов Даниил</p>
+      <div class="footer__columns">
+        <div class="footer__column_content_copyright">
+          <div class="logo logo_place_footer">
+            <img src="images/logo_place_footer.svg" alt="Логотип">
+          </div>
+          <p class="footer__author">&copy; Устинов Даниил</p>
         </div>
-        <div class="footer-text">
-          <div class="content-info">
-            <p class="column-heading">О Практикуме</p>
-            <ul class="column-links">
-              <li class="column-link">
-                <a href="#">Главная</a>
-              </li>
-              <li class="column-link">
-                <a href="#">Концепция</a>
-              </li>
-              <li class="column-link">
-                <a href="#">Наставники</a>
-              </li>
-            </ul>
-          </div>
-          <div class="content-social">
-            <p class="column-heading">Соцсети</p>
-            <ul class="column-links">
-              <li class="column-link-logo">
-                <img src="images/youtube_color_white.svg" alt="YouTube" class="footer-icon">
-                <a href="#" class="footer-logo-social">YouTube</a>
-              </li>
-              <li class="column-link-logo">
-                <img src="images/vk_color_white.svg" alt="YouTube" class="footer-icon">
-                <a href="#" class="footer-logo-social">ВКонтакте</a>
-              </li>
-              <li class="column-link-logo">
-                <img src="images/tiktok_color_white.svg" alt="YouTube" class="footer-icon">
-                <a href="#" class="footer-logo-social">TikTok</a>
-              </li>
-          </div>
+        <nav class="footer__column_content_info">
+          <h2 class="footer__column-heading">О Практикуме</h2>
+          <ul class="footer__column-links">
+            <li><a class="footer__column-link" href="#0">Главная</a></li>
+            <li><a class="footer__column-link" href="#0">Концепция</a></li>
+            <li><a class="footer__column-link" href="#0">Наставники</a></li>
+          </ul>
+        </nav>
+        <div class="footer__column_content_social">
+          <h2 class="footer__column-heading">Соцсети</h2>
+          <ul class="footer__column-links">
+            <li>
+              <a class="footer__column-link" href="#0">
+                <img src="images/youtube_color_white.svg" alt="YouTube" class="social-icon"> YouTube
+              </a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#0">
+                <img src="images/vk_color_white.svg" alt="ВКонтакте" class="social-icon"> ВКонтакте
+              </a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#0">
+                <img src="images/tiktok_color_white.svg" alt="TikTok" class="social-icon"> TikTok
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
+
   </div>
 </body>
 
